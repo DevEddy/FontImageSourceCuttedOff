@@ -10,7 +10,9 @@ namespace FontImageSourceCuttedOff
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var tabbedPage = new TabbedPage();
+            tabbedPage.Children.Add(new MainPage());
+            MainPage = tabbedPage;
         }
 
         protected override void OnStart()
